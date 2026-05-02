@@ -6,6 +6,15 @@ PulseOps is a production-grade, end-to-end data pipeline engineered to monitor a
 
 The system is designed to handle high-frequency vibration data from industrial sensors. It implements a multi-tier data lake, automated ETL pipelines, and unsupervised machine learning models to identify potential equipment failures before they occur, effectively reducing unplanned downtime and maintenance costs.
 
+## Visual Insights
+
+![System Overview](assets/Screenshot%20(248).png)
+![Analytics Dashboard](assets/Screenshot%20(252).png)
+![Pipeline Monitoring](assets/Screenshot%20(253).png)
+![ML Model Performance](assets/Screenshot%20(254).png)
+![Data Lake Status](assets/Screenshot%20(255).png)
+![Anomaly Detection Results](assets/Screenshot%20(256).png)
+
 ## Key Features
 
 - Automated Data Ingestion: Event-driven ingestion system with real-time file monitoring and noise simulation.
@@ -49,15 +58,23 @@ graph TD
         Backend --> Frontend[React Dashboard: frontend_react]
     end
 
-    %% Node Styling
-    style Start fill:#f9f,stroke:#333,stroke-width:2px
-    style RawStorage fill:#ccf,stroke:#333,stroke-width:2px
-    style CleanRaw fill:#ccf,stroke:#333,stroke-width:2px
-    style FeatureStore fill:#ccf,stroke:#333,stroke-width:2px
-    style AnomalyStore fill:#ccf,stroke:#333,stroke-width:2px
-    style Orchestrator fill:#f96,stroke:#333,stroke-width:4px
-    style Lambda fill:#87CEEB,stroke:#333,stroke-width:2px
-    style Inference fill:#FFB6C1,stroke:#333,stroke-width:2px
+    %% Node Styling for maximum visibility
+    style Start fill:#f9f,stroke:#333,stroke-width:2px,color:#000
+    style Download fill:#fff,stroke:#333,stroke-width:1px,color:#000
+    style RawStorage fill:#ccf,stroke:#333,stroke-width:2px,color:#000
+    style Watcher fill:#fff,stroke:#333,stroke-width:1px,color:#000
+    style Trigger fill:#fff,stroke:#333,stroke-width:1px,color:#000
+    style Lambda fill:#87CEEB,stroke:#333,stroke-width:2px,color:#000
+    style CleanRaw fill:#ccf,stroke:#333,stroke-width:2px,color:#000
+    style Orchestrator fill:#f96,stroke:#333,stroke-width:4px,color:#000
+    style PySparkJob fill:#fff,stroke:#333,stroke-width:1px,color:#000
+    style DuckDBJob fill:#fff,stroke:#333,stroke-width:1px,color:#000
+    style FeatureStore fill:#ccf,stroke:#333,stroke-width:2px,color:#000
+    style Inference fill:#FFB6C1,stroke:#333,stroke-width:2px,color:#000
+    style AnomalyStore fill:#ccf,stroke:#333,stroke-width:2px,color:#000
+    style Athena fill:#fff,stroke:#333,stroke-width:1px,color:#000
+    style Backend fill:#fff,stroke:#333,stroke-width:1px,color:#000
+    style Frontend fill:#90EE90,stroke:#333,stroke-width:3px,color:#000
 ```
 
 ## End-to-End Workflow
