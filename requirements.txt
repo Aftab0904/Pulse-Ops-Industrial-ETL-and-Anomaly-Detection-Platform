@@ -1,0 +1,14 @@
+pyspark
+duckdb
+watchdog
+streamlit
+pandas
+numpy
+scipy
+scikit-learn
+tensorflow
+plotly
+requests
+python-dotenv
+matplotlib
+seaborn
